@@ -43,3 +43,22 @@ footer {
     }
 }
 
+.searchResults {
+    width: 157px;
+    position: absolute;
+    right: 32px;
+    top: 47px;
+}
+
+.searchList {
+    background-color: whitesmoke;
+    list-style: none;
+    li {
+        border-bottom: solid 1px rgb(226, 213, 213);
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

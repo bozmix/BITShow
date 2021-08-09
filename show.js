@@ -28,6 +28,7 @@ request.onload = function (){
 
         let imgNode = document.createElement('img');
         imgNode.setAttribute('src', response.image.original);
+        imgNode.setAttribute('alt', 'TV Show poster');
         image.appendChild(imgNode);
 
         let descriptionTextHTML = response.summary;
@@ -83,7 +84,7 @@ castRequest.send();
 castRequest.onload = function(){
     let response = JSON.parse(castRequest.responseText);
     response.splice(10, 200);
-    console.log(response);
+    //console.log(response);
     response.forEach(function (el){
         let li = document.createElement('li');
         li.innerText = el.person.name;

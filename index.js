@@ -1,5 +1,6 @@
 let url = 'https://api.tvmaze.com/shows';
-
+const input = document.querySelector('input');
+import { onPress } from "./search.js";
 
     let request = new XMLHttpRequest();
     request.open('GET', url);
@@ -41,7 +42,7 @@ let url = 'https://api.tvmaze.com/shows';
                 })
             })
             moviesList.splice(50, 240);
-            console.log(moviesList);
+            //console.log(moviesList);
 
             moviesList.forEach(function(el){
                 let div = document.createElement('div');
@@ -71,7 +72,9 @@ let url = 'https://api.tvmaze.com/shows';
 
 
 
-function onClick (event){
+export function onClick (event){
     let targetId = parseInt(event.target.parentElement.getAttribute('id'));
     localStorage.setItem('id', targetId);
 }
+
+input.addEventListener('keyup', onPress);

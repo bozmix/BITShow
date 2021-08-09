@@ -29,4 +29,19 @@ footer p {
   .show .image img {
     width: 100%; }
 
+.searchResults {
+  width: 157px;
+  position: absolute;
+  right: 32px;
+  top: 47px; }
+
+.searchList {
+  background-color: whitesmoke;
+  list-style: none; }
+  .searchList li {
+    border-bottom: solid 1px #e2d5d5; }
+    .searchList li a {
+      text-decoration: none;
+      color: black; }
+
 /*# sourceMappingURL=main.css.map */
